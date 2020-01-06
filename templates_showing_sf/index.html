@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Project Uber</title>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <!-- <link rel="stylesheet" href="../css/reset.css"> -->
+  <!-- <link rel="stylesheet" href="/static/css/reset.css"> -->
+
+  <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+  integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+  crossorigin=""></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+
+
+
+</head>
+
+<body>
+  <div class="stuff">
+    <!-- ****************************** Nav Bar ****************************** -->
+    <nav class="navbar navbar-custom navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">SF Traffic Analyzer</a>
+        </div>
+      </div>
+    </nav>
+    <!-- ****************************** CONTAINERS ****************************** -->
+    <row>
+      <div class="col-md-5 col-md-offset-2">
+        <div class="container top_marg">
+          <div class="row-fluid">
+
+
+            <div id="map"></div>
+          </div>
+
+
+
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="jumbotron panel-transparent">
+          <div class="container text-form">
+
+
+            <div class="form-group">
+              <hr>
+              <hr>
+              <hr>              
+              <label for="weight_a_label">Origin</label>
+              <input type="text" class="form-control" name="origin" id="origin_id" placeholder="Click and select your origin">
+              <hr>
+              <hr>    
+            </div>
+
+            <div class="form-group">
+              <label for="weight_b_label">Destination</label>
+              <input type="text" class="form-control" name="destination" id="destination_id" placeholder="Click and select your destination">
+              <hr>  
+              <hr>  
+            </div>
+
+            <button onclick="plotNew()">Submit</button>
+
+
+          </div>
+        </div>
+      </div>
+    </row>
+
+
+    <div class="col-md-6  col-md-offset-3 plots">
+        <label for="weight_b_label">Destination</label>
+        <input type="text" class="form-control" name="destination" id="destination_id" placeholder="Click and select your destination">
+                <label for="weight_b_label">Destination</label>
+        <input type="text" class="form-control" name="destination" id="destination_id" placeholder="Click and select your destination">
+                <label for="weight_b_label">Destination</label>
+        <input type="text" class="form-control" name="destination" id="destination_id" placeholder="Click and select your destination">
+                <label for="weight_b_label">Destination</label>
+        <input type="text" class="form-control" name="destination" id="destination_id" placeholder="Click and select your destination">
+
+                <label for="weight_b_label">Destination</label>
+        <input type="text" class="form-control" name="destination" id="destination_id" placeholder="Click and select your destination">
+                <label for="weight_b_label">Destination</label>
+        <input type="text" class="form-control" name="destination" id="destination_id" placeholder="Click and select your destination">
+                <label for="weight_b_label">Destination</label>
+        <input type="text" class="form-control" name="destination" id="destination_id" placeholder="Click and select your destination">
+
+    </div>
+
+    <div class="col-md-8 col-md-offset-2 plots">
+        <label for="weight_b_label">Destination</label>
+        <input type="text" class="form-control" name="destination" id="destination_id" placeholder="Click and select your destination">
+    </div>
+ 
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript" src="/static/js/config.js"></script>
+    <script type="text/javascript" src="/static/js/geojson.js"></script>
+    <script type="text/javascript" src="/static/js/SF_Features.js"></script>
+    <script type="text/javascript" src="/static/js/logic.js"></script>
+
+  </body>
+  </html>

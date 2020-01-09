@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Project Uber</title>
+  <title>SF Traffic Analyzer</title>
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <!-- <link rel="stylesheet" href="../css/reset.css"> -->
   <!-- <link rel="stylesheet" href="/static/css/reset.css"> -->
@@ -54,27 +54,26 @@
       </div>
       <div class="col-md-3">
         <div class="jumbotron panel-transparent">
-          <div class="container text-form">
+          <div class="container text-form top_marg2">
 
 
             <div class="form-group">
-              <hr>
-              <hr>
-              <hr>              
-              <label for="weight_a_label">Origin</label>
-              <input type="text" class="form-control" name="origin" id="origin_id" placeholder="Click and select your origin">
-              <hr>
-              <hr>    
+              <p style="font-size : 18px; color: #2d97d4;">Welcome to use the SF Traffic Analyzer. Please click your starting location on the map and then click on the starting bar to auto fill. And do the same for the destination to get your analysis. Thanks.</p>
+              <p>&nbsp</p>
+              <label for="weight_a_label">Starting</label>
+              <input type="text" class="form-control" onclick="changestarting()" name="starting" id="starting_id" placeholder="Select your starting then click here.">
+              <p>&nbsp</p>
+ 
             </div>
 
             <div class="form-group">
               <label for="weight_b_label">Destination</label>
-              <input type="text" class="form-control" name="destination" id="destination_id" placeholder="Click and select your destination">
-              <hr>  
-              <hr>  
+              <input type="text" class="form-control" onclick="changedestination()" name="destination" id="destination_id" placeholder="Select your destination then click here.">
+              <p>&nbsp</p>
+  
             </div>
 
-            <button onclick="plotNew()">Submit</button>
+            <button onclick="plotNew()" style="font-size : 20px; font-weight:bold; width: 75%; height: 50px; font-family: “Copperplate Gothic Bold”, sans-serif;">Submit</button>
 
 
           </div>

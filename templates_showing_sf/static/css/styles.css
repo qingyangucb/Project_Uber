@@ -16,14 +16,14 @@ body {
 
 .navbar-custom {
 
-    background-color: #FFD700
+    background-color: #ff2400
 
 }
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
   font-family: “Copperplate Gothic Bold”, sans-serif;
-  color: #4169E1;
+  color: #ffffff;
   font-weight: bold;
   /*text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 white;*/
   font-size: 25px;
@@ -55,7 +55,7 @@ body {
   width: 50%;
 }
 
-.row.vdivide [class*='col-']:not(:last-child):after {
+/*.row.vdivide [class*='col-']:not(:last-child):after {
   background: #e0e0e0;
   width: 1px;
   content: "";
@@ -65,16 +65,20 @@ body {
   bottom: 0;
   right: 0;
   min-height: 70px;
-}
+}*/
 
 .top_marg{
-  margin-top:50px
+  margin-top:60px
+}
+
+.top_marg2{
+  margin-top:12px
 }
 
 .text-form {
   height: 530px;
   font-family: “Copperplate Gothic Bold”, sans-serif;
-  color: #FFD700;
+  color: #ff2400;
   /*text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 white;*/
   font-size: 20px;
 
